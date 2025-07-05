@@ -1,5 +1,12 @@
-const Home = () => {
-  return <div>Home</div>;
-};
+// src/app/page.tsx
+"use client";
 
-export default Home;
+import Player from "@/components/player/Player";
+
+export default function HomePage() {
+  return (
+    <main className="min-h-screen flex items-center justify-center bg-neutral-950 p-32">
+      <Player />
+    </main>
+  );
+}
